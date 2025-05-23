@@ -1,6 +1,7 @@
 import requests
 from endpoints.base_endpoint import Endpoint
 
+
 class PutObject(Endpoint):
     def put_by_id(self, object_id, payload):
         self.response = requests.put(f'https://api.restful-api.dev/objects/{object_id}', json=payload)

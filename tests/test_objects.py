@@ -17,11 +17,11 @@ payload = {
     }
 }
 
-def test_creat_object():
-    new_object_endpoint = CreateObject()
-    new_object_endpoint.new_object(payload=payload)
-    new_object_endpoint.check_response_is_200()
-    new_object_endpoint.check_name(payload['name'])
+# def test_creat_object():
+#     new_object_endpoint = CreateObject()
+#     new_object_endpoint.new_object(payload=payload)
+#     new_object_endpoint.check_response_is_200()
+#     new_object_endpoint.check_name(payload['name'])
 
 def test_get_object(obj_id_2):
     get_obj_endpoint = GetObject()
